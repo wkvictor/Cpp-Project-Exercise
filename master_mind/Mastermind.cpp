@@ -1,6 +1,6 @@
 #include "Mastermind.h"
 
-Mastermind::Mastermind(TextInput& inputManager, TextOuput& outputManager) :
+Mastermind::Mastermind(TextInput& inputManager, TextOutput& outputManager) :
     _inputManager(inputManager), _outputManager(outputManager) {
     bool playAgain = true;
     while (playAgain) {

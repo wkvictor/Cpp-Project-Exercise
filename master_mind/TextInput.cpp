@@ -60,7 +60,7 @@ Pattern TextInput::enterGuess() const {
 	while (!validPattern) {
 		cout << endl;
 		cout << "Enter a guess (colors are ";
-		cout << _palette,substr(0,_numColorsInUse) << "): ";
+		cout << _palette.substr(0,_numColorsInUse) << "): ";
 		cin >> patternString;
 
 		validPattern = true;

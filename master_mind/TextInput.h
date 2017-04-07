@@ -40,14 +40,14 @@ public:
 	 *
 	 * \return the number of colors
 	 */
-	int queryNumberofColors();
+	int queryNumberOfColors();
 
 	/**
 	 * \brief Ask the user maximum number of guesses to be allowed
 	 *
 	 * \return the maximum number of guesses
 	 */
-	int queryNumberofTurns() const;
+	int queryNumberOfTurns() const;
 
 	/**
 	 * \brief Offer the user a new game.

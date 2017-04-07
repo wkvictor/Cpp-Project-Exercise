@@ -17,7 +17,7 @@ int Pattern::getPegColor(const int index) const {
 	return _pegList[index];
 }
 
-int Pattern::setPegColor(const int index, const int colorId) {
+void Pattern::setPegColor(const int index, const int colorId) {
 	_pegList[index] = colorId;
 }
 
@@ -38,7 +38,7 @@ Score Pattern::compareTo(const Pattern& otherPattern) const {
 	// For each color used find the smaller number of time
 	// it appears in each pattern and add them up
 	int white = 0;
-	set<int>::iteartor colorIter;
+	set<int>::iterator colorIter;
 	int color, count1, count2;
 	for(colorIter = colorsUsed.begin(); colorIter != colorsUsed.end(); ++colorIter) {
 		color = *colorIter;

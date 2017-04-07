@@ -13,7 +13,7 @@ int main(int argc, char const *argv[]) {
 
 	TextInput input(palette);
 	TextOutput output(palette);
-	Mastermind game(intput, output);
+	Mastermind game(input, output);
 
 	return 0;
 }

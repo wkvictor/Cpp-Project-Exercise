@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-TextOutput::TextOutput(const vecotr<string>& colorNames) :
+TextOutput::TextOutput(const vector<string>& colorNames) :
     _currentTurnNum(0), _lengthOfPattern(0), _maxNumberOfTurns(0), _colorOptions("") {
     for(vector<string>::const_iterator iter = colorNames.begin(); iter != colorNames.end(); ++iter)
     	_colorOptions.push_back((*iter)[0]);
